@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tictactoe/widgets/my_text.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -57,16 +58,21 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(widget.title),
+        title: MyText(
+          text: widget.title,
+          color: Colors.white,
+          fontSize: 20,
+        ),
       ),
       body: Center(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const Text(
-              "X",
-              style: TextStyle(fontSize: 200, fontWeight: FontWeight.bold),
+            const MyText(
+              text: "X",
+              fontSize: 200,
+              color: Colors.black,
             ),
             const SizedBox(
               width: 50,
@@ -106,13 +112,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                           color: Colors.indigo,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Text(
-                        x1,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: x1, fontSize: 20, color: Colors.white),
                     ),
                   ),
                   GestureDetector(
@@ -143,12 +144,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        x2,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                      child: MyText(
+                        text: x2,
+                        fontSize: 20,
+                        color: Colors.white,
                       ),
                     ),
                   ),
@@ -180,13 +179,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        x3,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: x3, fontSize: 20, color: Colors.white),
                     ),
                   ),
                   GestureDetector(
@@ -217,12 +211,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        y1,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                      child: MyText(
+                        text: y1,
+                        fontSize: 20,
+                        color: Colors.white,
                       ),
                     ),
                   ),
@@ -254,13 +246,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        y2,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: y2, fontSize: 20, color: Colors.white),
                     ),
                   ),
                   GestureDetector(
@@ -291,13 +278,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        y3,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: y3, fontSize: 20, color: Colors.white),
                     ),
                   ),
                   GestureDetector(
@@ -328,13 +310,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        z1,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: z1, fontSize: 20, color: Colors.white),
                     ),
                   ),
                   GestureDetector(
@@ -365,13 +342,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: Text(
-                        z2,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: z2, fontSize: 20, color: Colors.white),
                     ),
                   ),
                   GestureDetector(
@@ -400,13 +372,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                           color: Colors.indigo,
                           borderRadius: BorderRadius.circular(10)),
-                      child: Text(
-                        z3,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                      child:
+                          MyText(text: z3, fontSize: 20, color: Colors.white),
                     ),
                   ),
                 ],
@@ -415,10 +382,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               width: 50,
             ),
-            const Text(
-              "O",
-              style: TextStyle(fontSize: 200, fontWeight: FontWeight.bold),
-            ),
+            const MyText(text: "O", fontSize: 200, color: Colors.black),
           ],
         ),
       ),

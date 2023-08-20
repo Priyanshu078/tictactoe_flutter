@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
-import 'goo';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyText extends StatelessWidget {
-  const MyText({super.key, required this.text});
+  const MyText({
+    super.key,
+    required this.text,
+    required this.color,
+    required this.fontSize,
+  });
 
   final String text;
+  final Color color;
+  final double fontSize;
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: GoogleFonts.,);
+    return Text(
+      text,
+      style: GoogleFonts.poppins(
+          color: color, fontSize: fontSize, fontWeight: FontWeight.bold),
+    );
   }
 }
