@@ -69,10 +69,10 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            const MyText(
+            MyText(
               text: "X",
               fontSize: 200,
-              color: Colors.black,
+              color: xTurn ? Colors.black : Colors.black26,
             ),
             const SizedBox(
               width: 50,
@@ -112,8 +112,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                           color: Colors.indigo,
                           borderRadius: BorderRadius.circular(10)),
-                      child:
-                          MyText(text: x1, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: x1, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                   GestureDetector(
@@ -144,10 +145,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: MyText(
-                        text: x2,
-                        fontSize: 20,
-                        color: Colors.white,
+                      child: Center(
+                        child: MyText(
+                          text: x2,
+                          fontSize: 40,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
@@ -179,8 +182,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child:
-                          MyText(text: x3, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: x3, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                   GestureDetector(
@@ -211,10 +215,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child: MyText(
-                        text: y1,
-                        fontSize: 20,
-                        color: Colors.white,
+                      child: Center(
+                        child: MyText(
+                          text: y1,
+                          fontSize: 40,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
@@ -246,8 +252,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child:
-                          MyText(text: y2, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: y2, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                   GestureDetector(
@@ -278,8 +285,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child:
-                          MyText(text: y3, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: y3, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                   GestureDetector(
@@ -310,8 +318,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child:
-                          MyText(text: z1, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: z1, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                   GestureDetector(
@@ -342,8 +351,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(10)),
                       height: 30,
                       width: 30,
-                      child:
-                          MyText(text: z2, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: z2, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                   GestureDetector(
@@ -372,8 +382,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                           color: Colors.indigo,
                           borderRadius: BorderRadius.circular(10)),
-                      child:
-                          MyText(text: z3, fontSize: 20, color: Colors.white),
+                      child: Center(
+                          child: MyText(
+                              text: z3, fontSize: 40, color: Colors.white)),
                     ),
                   ),
                 ],
@@ -382,7 +393,11 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               width: 50,
             ),
-            const MyText(text: "O", fontSize: 200, color: Colors.black),
+            MyText(
+              text: "O",
+              fontSize: 200,
+              color: xTurn ? Colors.black26 : Colors.black,
+            ),
           ],
         ),
       ),
